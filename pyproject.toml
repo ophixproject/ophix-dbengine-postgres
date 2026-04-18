@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ophix-dbengine-postgres"
+version = "2026.04.18.01"
+description = "PostgreSQL database driver plugin for Ophix Project Servers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Ophix Project" }
+]
+dependencies = [
+    "ophix-server-base",
+    "psycopg2-binary>=2.9",
+]
+
+[project.entry-points."ophix.plugins"]
+ophix_dbengine_postgres = "ophix_dbengine_postgres"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ophix_dbengine_postgres" = [
+    "deploy_templates/**/*",
+]
