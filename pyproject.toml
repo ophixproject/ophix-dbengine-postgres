@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ophix-dbengine-postgres"
-version = "2026.04.27.01"
+version = "2026.05.20.01"
 description = "PostgreSQL database driver plugin for Ophix Project Servers"
 readme = "README.md"
 requires-python = ">=3.10"
