@@ -1,8 +1,10 @@
 # ophix-dbengine-postgres
 
-PostgreSQL database engine plugin for [ophix-server-base](https://github.com/ophixproject/ophix-server-base).
+**Already running Postgres everywhere else? Your [Ophix](https://ophix.io) server can too.**
 
-Bundles `psycopg2-binary`. Set `DB_ENGINE=postgres` in `.env` to use it.
+Standing up one more database engine just for a fleet-management tool is exactly the kind of avoidable infrastructure sprawl nobody wants. `ophix-dbengine-postgres` lets any Ophix server (creds, tasks, confs, certs, zones) run against the Postgres instance you already operate — install the plugin, set `DB_ENGINE=postgres`, done.
+
+Bundles `psycopg2-binary`.
 
 ---
 
